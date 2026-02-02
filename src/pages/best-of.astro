@@ -45,7 +45,7 @@ const favoritePhotos = favoriteDays.flatMap(day =>
 
     <div class="card-grid">
       {favoriteDays.map((day) => (
-        <a href={`/WebPage_Tokyo2026/days/${day.slug}`} class="card">
+        <a href={`/Tokyo2026/days/${day.slug}`} class="card">
           <div class="card-image">
             {day.data.hero ? (
               <img src={`/WebPage_Tokyo2026${day.data.hero}`} alt={day.data.title} loading="lazy" />
