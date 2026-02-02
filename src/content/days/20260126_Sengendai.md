@@ -31,6 +31,10 @@ Sixteen thousand steps of exploration took Nate, Bear, and Dave from suburban ra
 
 ## Timeline
 
+**Morning**
+- First subway ride from Shinjuku to Sengendai
+- The quiet, orderly train ride hits home: "I'm really in Japan"
+
 **Midday (Sengendai)**
 - Ramen and gyoza lunch
 - Pick up rental car
@@ -46,15 +50,15 @@ Sixteen thousand steps of exploration took Nate, Bear, and Dave from suburban ra
 
 ## Moments & Notes
 
+- **First subway ride:** The morning train from Shinjuku to Sengendai was a shock — no announcements, no conversations, just people respectfully sharing space. The quiet, orderly ride hit home: this is what "I'm really in Japan" feels like.
 - **The Shaft:** Nate called it the "Punishment Tank" — but couldn't get over the scale. The concrete tunnel stretching endlessly underground, with a walkway perched along the top, felt like something out of a sci-fi movie.
 - **Under the tracks:** Yakitori dinner happened directly beneath active train tracks. Every time a train passed overhead, the whole restaurant gently shook. Only in Tokyo.
-- **Tokyo walking:** 16,000 steps in one day — and that felt normal. The city demands movement.
 
 ## What Nate and Bear said
 
 - **Nate:** Described the Underground Shaft as a "Punishment Tank" but was blown away by the "incredible scale." The walkway around the top of the shaft was his favorite part.
-- **Bear:** (No specific comment for this day)
+- **Bear:** The first subway ride was the moment it hit him: "I'm really in Japan." The quiet, orderly trains felt like another world.
 
 ## For the kids
 
-Leah, Caleb, Molly, Dexter, and Archer: Deep underground, there's a massive tunnel so big it has a walkway attached to the ceiling — that's the Underground Shaft. Nate called it the "Punishment Tank" because he couldn't believe how huge it was. Lunch was ramen and those delicious fried dumplings called gyoza, and dinner was yakitori — grilled chicken skewers — served at a restaurant built directly under the train tracks. Every time a train rumbled past overhead, the whole place shook. We walked 16,000 steps this day, and the crazy part is that's just how Tokyo works.
+Leah, Caleb, Molly, Dexter, and Archer: This day started with our first subway ride — and that's when it really hit us: the trains run on time and nobody talks on them, just quiet, respectful cooperation. Bear said "I'm really in Japan" watching the orderly silence. Then came the Underground Shaft — a massive tunnel so big it has a walkway attached to the ceiling. Nate called it the "Punishment Tank." Lunch was ramen and gyoza, dinner was yakitori under train tracks that rumbled overhead. We walked 16,000 steps, and that's just how Tokyo works.
