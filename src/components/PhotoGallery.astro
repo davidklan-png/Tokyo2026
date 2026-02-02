@@ -12,17 +12,17 @@ const { photos } = Astro.props;
     <div class="gallery" data-lightbox>
       {photos.map((photo, index) => (
         <a
-          href={photo.src}
+          href={`/WebPage_Tokyo2026${photo.src}`}
           class="gallery-item"
           data-lightbox-item
           data-index={index}
           aria-label={`View photo ${index + 1}`}
         >
           <img
-            src={photo.src}
+            src={`/WebPage_Tokyo2026${photo.src}`}
             alt={photo.alt || `Photo ${index + 1}`}
             loading="lazy"
-            data-full={photo.src}
+            data-full={`/WebPage_Tokyo2026${photo.src}`}
           />
           {photo.favorite && (
             <span class="favorite-badge">★</span>

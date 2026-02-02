@@ -15,7 +15,7 @@ const days = allDays
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a href="/" class="nav-logo">
+    <a href="/WebPage_Tokyo2026/" class="nav-logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         <polyline points="9 22 9 12 15 12 15 22"/>
@@ -23,17 +23,27 @@ const days = allDays
       <span>Tokyo 2026</span>
     </a>
 
-    <ul class="nav-menu">
-      <li><a href="/" class="nav-link">Home</a></li>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="/WebPage_Tokyo2026/" class="nav-link">Home</a></li>
       <li class="dropdown">
         <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true">
           Days
+          <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
         </button>
         <ul class="dropdown-menu" role="menu">
           {days.map(day => (
             <li>
               <a
-                href={`/days/${day.slug}`}
+                href={`/WebPage_Tokyo2026/days/${day.slug}`}
                 class="dropdown-item"
                 role="menuitem"
                 class:list={{ active: currentDay === day.slug }}
@@ -44,12 +54,111 @@ const days = allDays
           ))}
         </ul>
       </li>
-      <li><a href="/best-of" class="nav-link">Best Of</a></li>
+      <li><a href="/WebPage_Tokyo2026/best-of" class="nav-link">Best Of</a></li>
     </ul>
   </div>
 </nav>
 
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuBtn?.addEventListener('click', () => {
+    const isExpanded = menuBtn?.getAttribute('aria-expanded') === 'true';
+    menuBtn?.setAttribute('aria-expanded', String(!isExpanded));
+    navMenu?.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (!target?.closest('.nav')) {
+      menuBtn?.setAttribute('aria-expanded', 'false');
+      navMenu?.classList.remove('active');
+    }
+  });
+</script>
+
 <style>
+  .mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .mobile-menu-btn span {
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+
+  .dropdown-arrow {
+    margin-left: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown:hover .dropdown-arrow,
+  .dropdown-btn:focus .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: flex;
+    }
+
+    .nav-menu {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+      padding: var(--spacing-md) 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .nav-menu.active {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .nav-menu > li {
+      width: 100%;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-link,
+    .dropdown-btn {
+      width: 100%;
+      padding: var(--spacing-md);
+      display: block;
+    }
+
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      background-color: var(--color-bg);
+      padding-left: var(--spacing-xl);
+    }
+
+    .dropdown-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+  }
+
   .active {
     color: var(--color-primary);
     font-weight: 600;

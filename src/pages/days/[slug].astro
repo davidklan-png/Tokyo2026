@@ -41,7 +41,7 @@ const photos: Array<{ src: string; alt: string; favorite: boolean }> = [];
 
 if (fs.existsSync(photosDir)) {
   const files = fs.readdirSync(photosDir);
-  const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'];
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif', '.HEIC', '.heic'];
 
   files
     .filter((file: string) => {
@@ -50,7 +50,7 @@ if (fs.existsSync(photosDir)) {
     })
     .sort()
     .forEach((file: string) => {
-      const src = `/photos/${dateStr}/${file}`;
+      const src = `/WebPage_Tokyo2026/photos/${dateStr}/${file}`;
       const favorite = day.data.favoritePhotos?.includes(file);
       photos.push({
         src,
@@ -116,19 +116,19 @@ if (fs.existsSync(photosDir)) {
     <nav class="container" aria-label="Day navigation">
       <div class="day-nav">
         {prevDay && (
-          <a href={`/days/${prevDay.slug}`} class="day-nav-link prev">
+          <a href={`/WebPage_Tokyo2026/days/${prevDay.slug}`} class="day-nav-link prev">
             <span class="day-nav-label">← Previous</span>
             <span class="day-nav-title">{prevDay.data.title}</span>
           </a>
         )}
         {nextDay && (
-          <a href={`/days/${nextDay.slug}`} class="day-nav-link next">
+          <a href={`/WebPage_Tokyo2026/days/${nextDay.slug}`} class="day-nav-link next">
             <span class="day-nav-label">Next →</span>
             <span class="day-nav-title">{nextDay.data.title}</span>
           </a>
         )}
         <div class="day-nav-center">
-          <a href="/" class="btn btn-outline">All Days</a>
+          <a href="/WebPage_Tokyo2026/" class="btn btn-outline">All Days</a>
         </div>
       </div>
     </nav>
