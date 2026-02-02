@@ -1,0 +1,57 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  endDate?: Date;
+  participants: string[];
+  steps?: number;
+  hero?: string;
+  teaser: string;
+  slug: string;
+}
+
+const {
+  title,
+  date,
+  endDate,
+  participants,
+  steps,
+  hero,
+  teaser,
+  slug
+} = Astro.props;
+
+// Format date nicely
+const formatDate = (d: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(d);
+};
+
+const displayDate = endDate
+  ? `${formatDate(date)} - ${formatDate(endDate)}`
+  : formatDate(date);
+---
+
+<a href={`/days/${slug}`} class="card">
+  <div class="card-image">
+    {hero ? (
+      <img src={hero} alt={title} loading="lazy" />
+    ) : (
+      <div class="skeleton" style="width: 100%; height: 100%;"></div>
+    )}
+  </div>
+  <div class="card-content">
+    <div class="card-date">{displayDate}</div>
+    <h2 class="card-title">{title}</h2>
+    <div class="card-meta">
+      {participants.map(p => (
+        <span class="chip">{p}</span>
+      ))}
+      {steps && <span class="badge">{steps.toLocaleString()} steps</span>}
+    </div>
+    <p class="card-teaser">{teaser}</p>
+  </div>
+</a>

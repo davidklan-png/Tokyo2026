@@ -1,0 +1,140 @@
+---
+interface Props {
+  photos: Array<{ src: string; alt?: string; favorite?: boolean }>;
+  date: string;
+}
+
+const { photos, date } = Astro.props;
+---
+
+<div class="gallery-section" id="gallery">
+  <div class="container">
+    <h2 class="gallery-title">Photos</h2>
+    <div class="gallery" data-lightbox>
+      {photos.map((photo, index) => (
+        <a
+          href={photo.src}
+          class="gallery-item"
+          data-lightbox-item
+          data-index={index}
+          aria-label={`View photo ${index + 1}`}
+        >
+          <img
+            src={photo.src}
+            alt={photo.alt || `Photo ${index + 1}`}
+            loading="lazy"
+            data-full={photo.src}
+          />
+          {photo.favorite && (
+            <span class="favorite-badge">★</span>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+  </div>
+</div>
+
+<script>
+  // Lightbox functionality
+  const lightbox = document.getElementById('lightbox') as HTMLElement;
+  const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement;
+  const closeBtn = lightbox?.querySelector('.lightbox-close') as HTMLElement;
+  const prevBtn = lightbox?.querySelector('.lightbox-prev') as HTMLElement;
+  const nextBtn = lightbox?.querySelector('.lightbox-next') as HTMLElement;
+  const gallery = document.querySelector('[data-lightbox]');
+  const items = gallery?.querySelectorAll('[data-lightbox-item]') as NodeListOf<HTMLElement>;
+
+  let currentIndex = 0;
+
+  if (lightbox && items.length > 0) {
+    // Open lightbox on click
+    items.forEach((item, index) => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        currentIndex = index;
+        showImage(index);
+        openLightbox();
+      });
+    });
+
+    // Close handlers
+    closeBtn?.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Navigation
+    prevBtn?.addEventListener('click', showPrev);
+    nextBtn?.addEventListener('click', showNext);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+  }
+
+  function openLightbox() {
+    lightbox?.classList.add('active');
+    lightbox?.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox?.classList.remove('active');
+    lightbox?.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function showImage(index: number) {
+    const img = items[index]?.querySelector('img') as HTMLImageElement;
+    if (img && lightboxImg) {
+      lightboxImg.src = img.dataset.full || img.src;
+      lightboxImg.alt = img.alt;
+    }
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showImage(currentIndex);
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % items.length;
+    showImage(currentIndex);
+  }
+</script>
+
+<style>
+  .favorite-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: rgba(245, 166, 35, 0.9);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .gallery-item {
+    position: relative;
+  }
+</style>

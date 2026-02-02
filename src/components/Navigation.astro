@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+
+const { currentDay } = Astro.props;
+
+const allDays = await getCollection('days');
+const days = allDays
+  .map(day => ({
+    slug: day.slug,
+    title: day.data.title,
+    order: day.data.order
+  }))
+  .sort((a, b) => a.order - b.order);
+---
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span>Tokyo 2026</span>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li class="dropdown">
+        <button class="dropdown-btn" aria-expanded="false" aria-haspopup="true">
+          Days
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          {days.map(day => (
+            <li>
+              <a
+                href={`/days/${day.slug}`}
+                class="dropdown-item"
+                role="menuitem"
+                class:list={{ active: currentDay === day.slug }}
+              >
+                {day.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </li>
+      <li><a href="/best-of" class="nav-link">Best Of</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .active {
+    color: var(--color-primary);
+    font-weight: 600;
+  }
+</style>

@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import { getCollection } from 'astro:content';
+
+// Get all favorite days
+const allDays = await getCollection('days');
+const favoriteDays = allDays
+  .filter(day => day.data.favorite)
+  .sort((a, b) => a.data.order - b.data.order);
+
+// Collect favorite photos from all days
+const favoritePhotos = favoriteDays.flatMap(day =>
+  Array.from({ length: 3 }, (_, i) => ({
+    src: `/photos/${day.data.date.toISOString().split('T')[0]}/${i + 1}.jpg`,
+    alt: `${day.data.title} - ${day.data.teaser.slice(0, 50)}`,
+    favorite: true,
+    dayTitle: day.data.title,
+    daySlug: day.slug
+  }))
+);
+---
+
+<BaseLayout title="Best Of">
+  <Navigation />
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">★ Best Of Tokyo</h1>
+      <p class="hero-subtitle">
+        Our favorite moments and photos from the trip
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="container-narrow mt-xl mb-xl">
+      <h2 class="text-center" style="font-family: var(--font-serif); font-size: 1.75rem;">
+        Favorite Days
+      </h2>
+      <p class="text-center" style="color: var(--color-text-light);">
+        These were the absolute highlights of our Tokyo adventure
+      </p>
+    </section>
+
+    <div class="card-grid">
+      {favoriteDays.map((day) => (
+        <a href={`/days/${day.slug}`} class="card">
+          <div class="card-image">
+            {day.data.hero ? (
+              <img src={day.data.hero} alt={day.data.title} loading="lazy" />
+            ) : (
+              <div class="skeleton" style="width: 100%; height: 100%;"></div>
+            )}
+          </div>
+          <div class="card-content">
+            <div class="card-date">★ Favorite</div>
+            <h2 class="card-title">{day.data.title}</h2>
+            <p class="card-teaser">{day.data.teaser}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <section class="gallery-section" style="padding-top: 0;">
+      <h2 class="gallery-title">Favorite Photos</h2>
+      <div class="gallery">
+        {favoritePhotos.map((photo, index) => (
+          <a
+            href={photo.src}
+            class="gallery-item"
+            aria-label={`View ${photo.alt}`}
+          >
+            <img src={photo.src} alt={photo.alt} loading="lazy" />
+            <span class="favorite-badge">★</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Tokyo 2026 Family Trip — Made with ❤️</p>
+    </div>
+  </footer>
+</BaseLayout>

@@ -1,0 +1,149 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import PhotoGallery from '../../components/PhotoGallery.astro';
+import { getCollection } from 'astro:content';
+import fs from 'fs';
+import path from 'path';
+
+export async function getStaticPaths() {
+  const days = await getCollection('days');
+  return days.map((day) => ({
+    params: { slug: day.slug },
+    props: { day },
+  }));
+}
+
+const { day } = Astro.props;
+const { Content } = await day.render();
+
+// Get all days sorted for navigation
+const allDays = await getCollection('days');
+const sortedDays = allDays.sort((a, b) => a.data.order - b.data.order);
+const currentIndex = sortedDays.findIndex(d => d.slug === day.slug);
+const prevDay = currentIndex > 0 ? sortedDays[currentIndex - 1] : null;
+const nextDay = currentIndex < sortedDays.length - 1 ? sortedDays[currentIndex + 1] : null;
+
+// Format date
+const formatDate = (d: Date) => {
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(d);
+};
+
+// Auto-load photos from /photos/YYYY-MM-DD/ directory
+const dateStr = day.data.date.toISOString().split('T')[0];
+const photosDir = path.join('public', 'photos', dateStr);
+
+const photos: Array<{ src: string; alt: string; favorite: boolean }> = [];
+
+if (fs.existsSync(photosDir)) {
+  const files = fs.readdirSync(photosDir);
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'];
+
+  files
+    .filter(file => {
+      const ext = path.extname(file).toLowerCase();
+      return imageExtensions.includes(ext);
+    })
+    .sort()
+    .forEach(file => {
+      const src = `/photos/${dateStr}/${file}`;
+      const favorite = day.data.favoritePhotos?.includes(file);
+      photos.push({
+        src,
+        alt: `${day.data.title} - ${file}`,
+        favorite
+      });
+    });
+}
+---
+
+<BaseLayout title={day.data.title}>
+  <Navigation currentDay={day.slug} />
+
+  <article>
+    <header class="day-header">
+      <div class="container">
+        <p class="day-date">
+          {day.data.endDate
+            ? `${formatDate(day.data.date)} - ${formatDate(day.data.endDate)}`
+            : formatDate(day.data.date)}
+        </p>
+        <h1 class="day-title">{day.data.title}</h1>
+        <div class="day-meta">
+          {day.data.participants.map(p => (
+            <span class="chip">{p}</span>
+          ))}
+          {day.data.steps && (
+            <span class="badge">{day.data.steps.toLocaleString()} steps</span>
+          )}
+        </div>
+        {day.data.locations && day.data.locations.length > 0 && (
+          <div class="day-locations">
+            <span class="day-label">📍 </span>
+            {day.data.locations.map((loc, i) => (
+              <span>{i > 0 && ', '}{loc}</span>
+            ))}
+          </div>
+        )}
+      </div>
+    </header>
+
+    {day.data.highlights && day.data.highlights.length > 0 && (
+      <div class="container">
+        <div class="highlights-box">
+          <h3 class="highlights-title">✨ Highlights</h3>
+          <ul class="highlights-list">
+            {day.data.highlights.map(h => <li>{h}</li>)}
+          </ul>
+        </div>
+      </div>
+    )}
+
+    <div class="day-content container">
+      <Content />
+    </div>
+
+    {photos.length > 0 && (
+      <PhotoGallery
+        photos={photos}
+        date={dateStr}
+      />
+    )}
+
+    <nav class="container" aria-label="Day navigation">
+      <div class="day-nav">
+        {prevDay && (
+          <a href={`/days/${prevDay.slug}`} class="day-nav-link prev">
+            <span class="day-nav-label">← Previous</span>
+            <span class="day-nav-title">{prevDay.data.title}</span>
+          </a>
+        )}
+        {nextDay && (
+          <a href={`/days/${nextDay.slug}`} class="day-nav-link next">
+            <span class="day-nav-label">Next →</span>
+            <span class="day-nav-title">{nextDay.data.title}</span>
+          </a>
+        )}
+        <div class="day-nav-center">
+          <a href="/" class="btn btn-outline">All Days</a>
+        </div>
+      </div>
+    </nav>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Tokyo 2026 Family Trip — Made with ❤️</p>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  article {
+    min-height: 100vh;
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import DayCard from '../components/DayCard.astro';
+import { getCollection } from 'astro:content';
+
+// Get all days, sorted by order
+const allDays = await getCollection('days');
+const days = allDays.sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Home">
+  <Navigation />
+
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">Tokyo 2026</h1>
+      <p class="hero-subtitle">
+        Our family adventure in Tokyo — January 24 to February 2, 2026
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card-grid">
+      {days.map((day) => (
+        <DayCard
+          title={day.data.title}
+          date={day.data.date}
+          endDate={day.data.endDate}
+          participants={day.data.participants}
+          steps={day.data.steps}
+          hero={day.data.hero}
+          teaser={day.data.teaser}
+          slug={day.slug}
+        />
+      ))}
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Tokyo 2026 Family Trip — Made with ❤️</p>
+    </div>
+  </footer>
+</BaseLayout>

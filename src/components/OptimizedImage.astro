@@ -1,0 +1,58 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  src: string | ImageMetadata;
+  alt: string;
+  width?: number;
+  height?: number;
+  sizes?: string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+}
+
+const {
+  src,
+  alt,
+  width = 800,
+  height = 600,
+  sizes = '(max-width: 768px) 100vw, 50vw',
+  class: className = '',
+  loading = 'lazy'
+} = Astro.props;
+---
+
+<div class="optimized-image {className}">
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    sizes={sizes}
+    loading={loading}
+    format="webp"
+    quality={85}
+  />
+</div>
+
+<style>
+  .optimized-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .optimized-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .optimized-image img[loading] {
+    opacity: 0;
+  }
+
+  .optimized-image img.loaded {
+    opacity: 1;
+  }
+</style>
