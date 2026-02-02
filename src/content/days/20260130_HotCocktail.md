@@ -31,15 +31,15 @@ Day six delivered three Tokyo icons in sequence: hot cocktails in Ueno Park, the
 ## Timeline
 
 **Morning/Afternoon (Ueno)**
-- [Tokyo Hot Cocktail Festival](https://tokyo-hotcocktail.jimdosite.com/) at Ueno Park
+- [Tokyo Hot Cocktail Festival](https://tokyo-hotcocktail.jimdosite.com/) at [Ueno Park](https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno/)
 - Ankit, Nate, Bear, and Dave sample creative drinks
 
 **Late Afternoon (Ameyokocho)**
-- Walk through Ameyokocho street market
+- Walk through [Ameyokocho](https://www.tokyopocketguide.com/tokyo/ameyoko.html) street market
 - Browse stalls and soak in the energy
 
 **Evening (Akihabara)**
-- Walk to Akihabara
+- Walk to [Akihabara](https://www.akiba.or.jp/)
 - Waffles and pancakes
 - Search local shops for Sonic the Hedgehog merchandise
 - Light dinner at home (Nate, Bear, Taz, Dave)
@@ -49,7 +49,7 @@ Day six delivered three Tokyo icons in sequence: hot cocktails in Ueno Park, the
 - **[Tokyo Hot Cocktail Festival](https://tokyo-hotcocktail.jimdosite.com/):** Apple was the theme — Nate loved "AppleJam," Bear enjoyed "the two apple drinks." Only in Japan: hot cocktails in a park.
 - **The Sonic hunt:** Multiple Akihabara shops, anime capital of Japan, zero Sonic merchandise. Bear's verdict: "No, he doesn't exist in Japan."
 - **Candy variety packs:** Those assortments of weird and wonderful snacks make perfect souvenirs.
-- **Ameyokocho energy:** The street market delivers sensory overload — stalls crammed with everything, crowds, chaos, somehow perfectly organized.
+- **Ameyokocho energy:** [Ameyokocho](https://www.tokyopocketguide.com/tokyo/ameyoko.html) street market delivers sensory overload — stalls crammed with everything, crowds, chaos, somehow perfectly organized.
 
 ## What Nate and Bear said
 
@@ -58,4 +58,4 @@ Day six delivered three Tokyo icons in sequence: hot cocktails in Ueno Park, the
 
 ## For the kids
 
-Leah, Caleb, Molly, Dexter, and Archer: The [Tokyo Hot Cocktail Festival](https://tokyo-hotcocktail.jimdosite.com/) is exactly what it sounds like — hot cocktails in a park. Only in Japan. Then Ameyokocho, this insane street market with stalls crammed full of everything. Then Akihabara, anime and video game capital, where we hunted for Sonic the Hedgehog merchandise. Surely Japan, home of Sonic, would have plenty, right? Bear searched multiple shops and delivered his verdict: "Sonic doesn't exist in Japan." We found waffles, pancakes, and candy variety packs instead. Sometimes the hunt is the point.
+Leah, Caleb, Molly, Dexter, and Archer: The [Tokyo Hot Cocktail Festival](https://tokyo-hotcocktail.jimdosite.com/) is exactly what it sounds like — hot cocktails in [Ueno Park](https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno/). Only in Japan. Then [Ameyokocho](https://www.tokyopocketguide.com/tokyo/ameyoko.html), this insane street market with stalls crammed full of everything. Then [Akihabara](https://www.akiba.or.jp/), anime and video game capital, where we hunted for Sonic the Hedgehog merchandise. Surely Japan, home of Sonic, would have plenty, right? Bear searched multiple shops and delivered his verdict: "Sonic doesn't exist in Japan." We found waffles, pancakes, and candy variety packs instead. Sometimes the hunt is the point.

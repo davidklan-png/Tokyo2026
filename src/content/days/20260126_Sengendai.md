@@ -36,23 +36,23 @@ Sixteen thousand steps of exploration took Nate, Bear, and Dave from suburban ra
 - The quiet, orderly train ride hits home: "I'm really in Japan"
 
 **Midday (Sengendai)**
-- Ramen and gyoza lunch
+- Ramen and gyoza lunch at [Mansyu](http://www.mansyu.co.jp/)
 - Pick up rental car
 - Drive to Kasukabe
 
 **Afternoon (The Underground Shaft)**
-- 3:00 PM ~ 4:50 PM: Underground Booking Shaft Experience Course
+- 3:00 PM ~ 4:50 PM: [Underground Shaft Experience Course](https://gaikaku.jp/course/)
 - Participants: Taz, Nate, Bear, David
 
 **Evening (Kinshicho)**
 - Return to Kinshicho
-- Yakitori dinner under the train tracks
+- Yakitori dinner at [Torikei](https://maps.app.goo.gl/wWpFzUef5PhNuyi28) under the train tracks
 
 ## Moments & Notes
 
 - **First subway ride:** The morning train from Shinjuku to Sengendai was a shock — no announcements, no conversations, just people respectfully sharing space. The quiet, orderly ride hit home: this is what "I'm really in Japan" feels like.
-- **The Shaft:** Nate called it the "Punishment Tank" — but couldn't get over the scale. The concrete tunnel stretching endlessly underground, with a walkway perched along the top, felt like something out of a sci-fi movie.
-- **Under the tracks:** Yakitori dinner happened directly beneath active train tracks. Every time a train passed overhead, the whole restaurant gently shook. Only in Tokyo.
+- **The Shaft:** Nate called it the "Punishment Tank" — but couldn't get over the scale. The [Underground Shaft Experience](https://gaikaku.jp/course/) concrete tunnel stretching endlessly underground, with a walkway perched along the top, felt like something out of a sci-fi movie.
+- **Under the tracks:** Yakitori dinner at [Torikei](https://maps.app.goo.gl/wWpFzUef5PhNuyi28) happened directly beneath active train tracks. Every time a train passed overhead, the whole restaurant gently shook. Only in Tokyo.
 
 ## What Nate and Bear said
 
@@ -61,4 +61,4 @@ Sixteen thousand steps of exploration took Nate, Bear, and Dave from suburban ra
 
 ## For the kids
 
-Leah, Caleb, Molly, Dexter, and Archer: This day started with our first subway ride — and that's when it really hit us: the trains run on time and nobody talks on them, just quiet, respectful cooperation. Bear said "I'm really in Japan" watching the orderly silence. Then came the Underground Shaft — a massive tunnel so big it has a walkway attached to the ceiling. Nate called it the "Punishment Tank." Lunch was ramen and gyoza, dinner was yakitori under train tracks that rumbled overhead. We walked 16,000 steps, and that's just how Tokyo works.
+Leah, Caleb, Molly, Dexter, and Archer: This day started with our first subway ride — and that's when it really hit us: the trains run on time and nobody talks on them, just quiet, respectful cooperation. Bear said "I'm really in Japan" watching the orderly silence. Then came the [Underground Shaft Experience](https://gaikaku.jp/course/) — a massive tunnel so big it has a walkway attached to the ceiling. Nate called it the "Punishment Tank." Lunch was ramen and gyoza at [Mansyu](http://www.mansyu.co.jp/), dinner was yakitori at [Torikei](https://maps.app.goo.gl/wWpFzUef5PhNuyi28) under train tracks that rumbled overhead. We walked 16,000 steps, and that's just how Tokyo works.
