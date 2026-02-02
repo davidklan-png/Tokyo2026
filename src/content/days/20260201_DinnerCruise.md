@@ -19,7 +19,7 @@ highlights:
 favoritePhotos:
   - "1.jpg"
   - "2.jpg"
-hero: "/photos/2026-02-01/1.jpg"
+hero: "/photos/2026-02-01/11.jpg"
 teaser: "From the world's tallest tower to ancient Sensō-ji Temple's incense-filled market, then a Yakatabune floating past Rainbow Bridge — Bear on deck in Tokyo Bay found pure serenity in a city that never truly sleeps."
 order: 8
 favorite: true
