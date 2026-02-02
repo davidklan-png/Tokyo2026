@@ -27,7 +27,7 @@ favorite: true
 
 ## Overview
 
-Day eight was a journey through Tokyo's contrasting identities. Starting at [Tokyo Skytree](https://www.tokyo-skytree.jp/en/), the world's tallest tower, the group descended into the old-world atmosphere of Asakusa's [Sensō-ji](https://www.senso-ji.jp/) Temple. There was burger consumption (Kua'Aina) and ice cream (multiple rounds). Then came the evening highlight: a yakatabune dinner cruise on Tokyo Bay. For 2.5 hours, Nate, Bear, Dave, Ankit, and Taz floated past Rainbow Bridge and watched the city lights reflect off the water. Standing on deck in the middle of Tokyo Bay at night, Bear found a moment of pure serenity in a city that never truly sleeps.
+Day eight was a journey through Tokyo's contrasting identities — from [Tokyo Skytree](https://www.tokyo-skytree.jp/en/), the world's tallest tower, down into old-world Asakusa and the ancient [Sensō-ji](https://www.senso-ji.jp/) Temple. Kua'Aina burgers and multiple rounds of ice cream fueled the afternoon. Then came the evening highlight: a yakatabune dinner cruise on Tokyo Bay. For 2.5 hours, Nate, Bear, Dave, Ankit, and Taz floated past Rainbow Bridge, watching city lights reflect off the water. Bear standing on deck in the middle of Tokyo Bay at night found pure serenity in a city that never truly sleeps.
 
 ## Timeline
 
@@ -38,25 +38,22 @@ Day eight was a journey through Tokyo's contrasting identities. Starting at [Tok
 
 **Late Afternoon (Asakusa)**
 - Train to Asakusa
-- Explore [Sensō-ji](https://www.senso-ji.jp/) Temple and surrounding market
-- Experience the sensory explosion of temple incense and street food
+- Explore [Sensō-ji](https://www.senso-ji.jp/) Temple and market
 - Ice cream round two
-- Meet at nearby park to wait for dinner cruise
-- Ankit and Taz join the group
+- Meet at nearby park; Ankit and Taz join
 
 **Evening (Tokyo Bay)**
 - Board yakatabune dinner boat (2.5 hour cruise)
-- Sunset on the water
-- Dinner with Rainbow Bridge views
+- Sunset, dinner, Rainbow Bridge views
 - Tokyo skyline at night
 - Return to The Knot for drinks
 
 ## Moments & Notes
 
-- **[Tokyo Skytree](https://www.tokyo-skytree.jp/en/) views:** The world's tallest tower provides perspective on just how massive Tokyo really is. The city stretches forever in every direction.
-- **Asakusa's temple market:** Bear was captivated by "the thong of people leading up to the temple, the shops/market leading up to it." The spirituality, the incense, the street food smells — "it was an experience for the senses that I very much enjoyed."
-- **The dinner cruise:** The Yakatabune experience was serene in a way Tokyo rarely is. Bear standing on deck, floating through Tokyo Bay at night: "Standing outside in the middle of the Tokyo night was as quiet and serene as it gets in a fairly quiet and serene city."
-- **Rainbow Bridge:** Seeing it from the water at night, lit up and reflecting off Tokyo Bay — one of those images that stays with you.
+- **[Tokyo Skytree](https://www.tokyo-skytree.jp/en/) views:** The world's tallest tower provides perspective on Tokyo's scale — the city stretches forever in every direction.
+- **Asakusa's temple market:** Bear was captivated by "the thong of people leading up to the temple, the shops/market leading up to it." The spirituality, incense, street food smells — "an experience for the senses that I very much enjoyed."
+- **The dinner cruise:** Yakatabune delivered serenity in a way Tokyo rarely does. Bear on deck, floating through Tokyo Bay at night: "Standing outside in the middle of the Tokyo night was as quiet and serene as it gets."
+- **Rainbow Bridge:** From the water at night, lit up and reflecting off Tokyo Bay — one of those images that stays with you.
 
 ## What Nate and Bear said
 
@@ -65,4 +62,4 @@ Day eight was a journey through Tokyo's contrasting identities. Starting at [Tok
 
 ## For the kids
 
-Leah, Caleb, Molly, Dexter, and Archer: Today started at [Tokyo Skytree](https://www.tokyo-skytree.jp/en/) — imagine a tower so tall that when you're at the top, you can see the entire city stretching out forever in every direction. We had burgers at Kua'Aina (yes, they have good burgers in Japan) and then headed to Asakusa to see [Sensō-ji](https://www.senso-ji.jp/) Temple. The temple is ancient and beautiful, but what really stuck with Bear was the walk up to it — this street packed with shops and people, the smell of incense mixing with street food. It's this incredible sensory explosion. Then came the boat — a Yakatabune dinner cruise on Tokyo Bay. For 2.5 hours, we floated past Rainbow Bridge while the city lights came on. Bear stood out on deck for a while and said it was the most peaceful, serene thing he'd experienced in Tokyo. The city is huge and busy, but from the water at night, it's just... quiet. Tokyo is full of surprises like that.
+Leah, Caleb, Molly, Dexter, and Archer: Today started at [Tokyo Skytree](https://www.tokyo-skytree.jp/en/) — a tower so tall that from the top, the entire city stretches out forever. Burgers at Kua'Aina (yes, Japan has good burgers), then Asakusa's ancient [Sensō-ji](https://www.senso-ji.jp/) Temple. What stuck with Bear was the walk up — a street packed with shops and people, incense mixing with street food smells, incredible sensory explosion. Then came the boat: a Yakatabune dinner cruise on Tokyo Bay. For 2.5 hours, we floated past Rainbow Bridge while city lights came on. Bear stood on deck and said it was the most peaceful, serene thing he'd experienced in Tokyo. The city is huge and busy, but from the water at night, it's just... quiet. Tokyo is full of surprises like that.
