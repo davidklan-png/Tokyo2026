@@ -17,9 +17,9 @@ highlights:
   - "Tokyo Bay sunset dinner cruise"
   - "Rainbow Bridge at night"
 favoritePhotos:
-  - "IMG_3515.JPG"
-  - "IMG_3503.HEIC"
-hero: "IMG_3515.JPG"
+  - "1.jpg"
+  - "2.jpg"
+hero: "/photos/2026-02-01/1.jpg"
 teaser: "Ancient temples, modern towers, and Tokyo Bay at night — this was the day we saw the city from every angle, culminating in a serene dinner cruise on the water."
 order: 8
 favorite: true

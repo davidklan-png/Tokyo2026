@@ -17,8 +17,8 @@ highlights:
   - "Akihabara waffles and pancakes"
   - "The great Sonic search (spoiler: he doesn't exist in Japan)"
 favoritePhotos:
-  - "IMG_3484.HEIC"
-hero: "IMG_3484.HEIC"
+  - "1.jpg"
+hero: "/photos/2026-01-30/1.jpg"
 teaser: "Hot cocktails, street markets, and the elusive Sonic — a day of festival vibes and video game treasure hunting in Tokyo's most iconic neighborhoods."
 order: 6
 favorite: false

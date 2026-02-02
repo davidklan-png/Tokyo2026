@@ -17,9 +17,9 @@ highlights:
   - "Underground Shaft Experience Course"
   - "Yakitori dinner under the train tracks"
 favoritePhotos:
-  - "IMG_2362.HEIC"
-  - "S__117817367.jpg"
-hero: "IMG_2362.HEIC"
+  - "1.jpg"
+  - "2.jpg"
+hero: "/photos/2026-01-26/1.jpg"
 teaser: "16,000 steps, one incredible underground experience, and a whole lot of good food — this was the day Tokyo really opened up."
 order: 2
 favorite: false
