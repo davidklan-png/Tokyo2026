@@ -48,7 +48,7 @@ const favoritePhotos = favoriteDays.flatMap(day =>
         <a href={`/Tokyo2026/days/${day.slug}`} class="card">
           <div class="card-image">
             {day.data.hero ? (
-              <img src={`/WebPage_Tokyo2026${day.data.hero}`} alt={day.data.title} loading="lazy" />
+              <img src={`/Tokyo2026${day.data.hero}`} alt={day.data.title} loading="lazy" />
             ) : (
               <div class="skeleton" style="width: 100%; height: 100%;"></div>
             )}
@@ -67,11 +67,11 @@ const favoritePhotos = favoriteDays.flatMap(day =>
       <div class="gallery">
         {favoritePhotos.map((photo) => (
           <a
-            href={`/WebPage_Tokyo2026${photo.src}`}
+            href={`/Tokyo2026${photo.src}`}
             class="gallery-item"
             aria-label={`View ${photo.alt}`}
           >
-            <img src={`/WebPage_Tokyo2026${photo.src}`} alt={photo.alt} loading="lazy" />
+            <img src={`/Tokyo2026${photo.src}`} alt={photo.alt} loading="lazy" />
             <span class="favorite-badge">★</span>
           </a>
         ))}
