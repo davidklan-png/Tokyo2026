@@ -3,8 +3,9 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   integrations: [mdx()],
+  output: 'static',
   site: 'https://teabagger.github.io/WebPage_Tokyo2026',
-  base: '/WebPage_Tokyo2026',
+  base: '/WebPage_Tokyo2026/',
   build: {
     format: 'directory',
   },
