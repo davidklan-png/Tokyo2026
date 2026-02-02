@@ -20,7 +20,7 @@ favoritePhotos:
   - "1.jpg"
   - "2.jpg"
 hero: "/photos/2026-01-26/1.jpg"
-teaser: "16,000 steps, one incredible underground experience, and a whole lot of good food — this was the day Tokyo really opened up."
+teaser: "Sixteen thousand steps from suburban ramen to a massive underground water tunnel Nate called the Punishment Tank, then yakitori dinner as trains rumbled overhead — Tokyo revealed itself as something far larger than neighborhoods."
 order: 2
 favorite: false
 ---

@@ -19,7 +19,7 @@ highlights:
 favoritePhotos:
   - "1.jpg"
 hero: "/photos/2026-01-30/1.jpg"
-teaser: "Hot cocktails, street markets, and the elusive Sonic — a day of festival vibes and video game treasure hunting in Tokyo's most iconic neighborhoods."
+teaser: "Apple-themed hot cocktails in Ueno Park, Ameyokocho's sensory explosion, then a Sonic hunt through anime capital Akihabara that ended with Bear's verdict: 'Sonic doesn't exist in Japan.' But the candy variety packs definitely do."
 order: 6
 favorite: false
 ---

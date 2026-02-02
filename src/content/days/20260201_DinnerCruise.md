@@ -20,7 +20,7 @@ favoritePhotos:
   - "1.jpg"
   - "2.jpg"
 hero: "/photos/2026-02-01/1.jpg"
-teaser: "Ancient temples, modern towers, and Tokyo Bay at night — this was the day we saw the city from every angle, culminating in a serene dinner cruise on the water."
+teaser: "From the world's tallest tower to ancient Sensō-ji Temple's incense-filled market, then a Yakatabune floating past Rainbow Bridge — Bear on deck in Tokyo Bay found pure serenity in a city that never truly sleeps."
 order: 8
 favorite: true
 ---
