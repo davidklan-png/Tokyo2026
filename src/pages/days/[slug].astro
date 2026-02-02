@@ -44,12 +44,12 @@ if (fs.existsSync(photosDir)) {
   const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'];
 
   files
-    .filter(file => {
+    .filter((file: string) => {
       const ext = path.extname(file).toLowerCase();
       return imageExtensions.includes(ext);
     })
     .sort()
-    .forEach(file => {
+    .forEach((file: string) => {
       const src = `/photos/${dateStr}/${file}`;
       const favorite = day.data.favoritePhotos?.includes(file);
       photos.push({
@@ -110,7 +110,6 @@ if (fs.existsSync(photosDir)) {
     {photos.length > 0 && (
       <PhotoGallery
         photos={photos}
-        date={dateStr}
       />
     )}
 

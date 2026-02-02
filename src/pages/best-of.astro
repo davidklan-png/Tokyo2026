@@ -65,7 +65,7 @@ const favoritePhotos = favoriteDays.flatMap(day =>
     <section class="gallery-section" style="padding-top: 0;">
       <h2 class="gallery-title">Favorite Photos</h2>
       <div class="gallery">
-        {favoritePhotos.map((photo, index) => (
+        {favoritePhotos.map((photo) => (
           <a
             href={photo.src}
             class="gallery-item"

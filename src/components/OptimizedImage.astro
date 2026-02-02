@@ -1,8 +1,6 @@
 ---
-import { Image } from 'astro:assets';
-
 interface Props {
-  src: string | ImageMetadata;
+  src: string;
   alt: string;
   width?: number;
   height?: number;
@@ -17,21 +15,18 @@ const {
   width = 800,
   height = 600,
   sizes = '(max-width: 768px) 100vw, 50vw',
-  class: className = '',
   loading = 'lazy'
 } = Astro.props;
 ---
 
-<div class="optimized-image {className}">
-  <Image
+<div class="optimized-image">
+  <img
     src={src}
     alt={alt}
     width={width}
     height={height}
     sizes={sizes}
     loading={loading}
-    format="webp"
-    quality={85}
   />
 </div>
 
