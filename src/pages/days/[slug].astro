@@ -50,7 +50,7 @@ if (fs.existsSync(photosDir)) {
     })
     .sort()
     .forEach((file: string) => {
-      const src = `/Tokyo2026/photos/${dateStr}/${file}`;
+      const src = `/photos/${dateStr}/${file}`;
       const favorite = day.data.favoritePhotos?.includes(file);
       photos.push({
         src,
