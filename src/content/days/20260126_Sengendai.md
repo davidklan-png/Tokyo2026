@@ -27,30 +27,28 @@ favorite: false
 
 ## Overview
 
-Day two in Japan was a proper introduction to just how big Tokyo can be. Starting with ramen and gyoza in Sengendai, the group picked up a rental car and drove to Kasukabe for the Underground Shaft Experience — a truly impressive course that defies easy description. The day wrapped up back in Kinshicho with dinner at a yakitori restaurant situated directly under the train tracks. Sixteen thousand steps later, everyone was starting to understand the scale of this city.
+Sixteen thousand steps of exploration took Nate, Bear, and Dave from suburban ramen shops to an underground infrastructure project on a scale that defies comprehension. The Underground Shaft Experience — a massive water tunnel beneath Saitama — revealed the hidden systems keeping Tokyo running, while dinner under the train tracks in Kinshicho proved that this city finds ways to fit life into every corner. Tokyo was beginning to reveal itself as something much larger than a collection of neighborhoods.
 
 ## Timeline
 
 **Midday (Sengendai)**
-- Ramen and gyoza lunch in Sengendai
+- Ramen and gyoza lunch
 - Pick up rental car
 - Drive to Kasukabe
 
 **Afternoon (The Underground Shaft)**
 - 3:00 PM ~ 4:50 PM: Underground Booking Shaft Experience Course
 - Participants: Taz, Nate, Bear, David
-- Navigate the truly impressive underground facility
 
 **Evening (Kinshicho)**
 - Return to Kinshicho
-- Dinner at yakitori restaurant under the train tracks
-- Reflect on 16,000 steps walked
+- Yakitori dinner under the train tracks
 
 ## Moments & Notes
 
-- **The Shaft:** Nate described the Underground Shaft Experience with one word: "Punishment Tank" — but also noted the "incredible scale." The walkway around the top was the standout feature.
-- **Yakitori under the tracks:** Dinner was served at a restaurant literally positioned under the train tracks — a uniquely Tokyo dining experience.
-- **Step count:** The day's walking totaled 16,000 steps, a proper introduction to just how much ground you cover in this city.
+- **The Shaft:** Nate called it the "Punishment Tank" — but couldn't get over the scale. The concrete tunnel stretching endlessly underground, with a walkway perched along the top, felt like something out of a sci-fi movie.
+- **Under the tracks:** Yakitori dinner happened directly beneath active train tracks. Every time a train passed overhead, the whole restaurant gently shook. Only in Tokyo.
+- **Tokyo walking:** 16,000 steps in one day — and that felt normal. The city demands movement.
 
 ## What Nate and Bear said
 
@@ -59,4 +57,4 @@ Day two in Japan was a proper introduction to just how big Tokyo can be. Startin
 
 ## For the kids
 
-Leah, Caleb, Molly, Dexter, and Archer: Imagine a place so big underground that it has its own walkway *on top* of it. That's the Shaft — and according to Nate, it's like a "punishment tank" but in the best way possible. Lunch was ramen and gyoza (those delicious fried dumplings you might've tried back home), and dinner was yakitori — grilled chicken skewers — served at a restaurant built directly under the train tracks. Every time a train passed overhead, the whole place would rumble a little. 16,000 steps in one day. Welcome to Tokyo walking.
+Leah, Caleb, Molly, Dexter, and Archer: Deep underground, there's a massive tunnel so big it has a walkway attached to the ceiling — that's the Underground Shaft. Nate called it the "Punishment Tank" because he couldn't believe how huge it was. Lunch was ramen and those delicious fried dumplings called gyoza, and dinner was yakitori — grilled chicken skewers — served at a restaurant built directly under the train tracks. Every time a train rumbled past overhead, the whole place shook. We walked 16,000 steps this day, and the crazy part is that's just how Tokyo works.
